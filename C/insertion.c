@@ -31,7 +31,7 @@ int main()
     return 0;
 }
 
-/* A function to create a linked list with the specified number of nodes */
+// A function to create a linked list with the specified number of nodes
 
 void createList(int n)
 {
