@@ -5,19 +5,19 @@ public class MethodOverloading {
 	
 	MethodOverloading()
 	{
-		System.out.println("Default");
+		System.out.println("Default Constructor");
 	}
 	
 	MethodOverloading(int x)
 	{
 		num = x;
-		System.out.println("Parameterized 1");
+		System.out.println("Parameterized Constructor 1");
 	}
 	
 	MethodOverloading(int x, int y)
 	{
 		num = x;
-		System.out.println("Parameterized 2");
+		System.out.println("Parameterized Constructor 2");
 	}
 	
 	int add(int x, int y)
@@ -37,7 +37,8 @@ public class MethodOverloading {
 	
 	public static void main(String[] args) {
 		
-		MethodOverloading obj = new MethodOverloading();	// 55, 66
+		MethodOverloading obj = new MethodOverloading();
+		// you can ever take input from user during runtime
 		System.out.println("Total is " + obj.add(5, 6));
 		System.out.println("Total is " + obj.add(1, 2, 3));
 		System.out.println("Total is " + obj.add(3.5, 2.2));
