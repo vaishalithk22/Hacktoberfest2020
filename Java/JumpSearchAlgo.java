@@ -1,5 +1,5 @@
 // Java program to implement Jump Search. 
-public class JumpSearch 
+public class JumpSearchAlgo
 { 
 	public static int jumpSearch(int[] arr, int x) 
 	{ 
