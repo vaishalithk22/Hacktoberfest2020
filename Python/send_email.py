@@ -2,11 +2,12 @@ import smtplib
 import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from getpass import getpass
 
 try:
-    email = "<< Enter your email >>"
-    password = "<< Enter your password"
-    to = "<< Enter sender email >>"
+    email = input("Enter your email: ")
+    password = getpass("Enter your password: ")
+    to = input("Enter sender email: ")
     msg = """ << Email Body >>"""
     message = MIMEMultipart()
     message["From"] = email
@@ -26,4 +27,3 @@ except Exception as ex:
 
 finally:
     server.quit()
-© 2020 GitHub, Inc.
