@@ -1,4 +1,35 @@
-import java.util.Scanner;
+class Reader {
+    static BufferedReader reader;
+    static StringTokenizer tokenizer;
+
+
+
+    static void init(InputStream input) {
+        reader = new BufferedReader(
+                     new InputStreamReader(input) );
+        tokenizer = new StringTokenizer("");
+    }
+
+
+    static String next() throws IOException {
+        while ( ! tokenizer.hasMoreTokens() ) {
+
+
+            tokenizer = new StringTokenizer(
+                   reader.readLine() );
+        }
+        return tokenizer.nextToken();
+    }
+
+    static int nextInt() throws IOException {
+
+    	return Integer.parseInt( next() );
+    }
+	
+    static double nextDouble() throws IOException {
+        return Double.parseDouble( next() );
+    }
+}
 
 public class Ceasercipher {
 
@@ -46,10 +77,10 @@ public class Ceasercipher {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Reader.init(System.in);
         System.out.println("Enter the String for Encryption: ");
         String message = new String();
-        message = sc.next();
+        message = Reader.next();
         System.out.println(encrypt(message, 3));
         System.out.println(decrypt(encrypt(message, 3), 3));
         sc.close();
