@@ -5,19 +5,19 @@ public class MethodOverloading {
 	
 	MethodOverloading()
 	{
-		System.out.println("Default Constructor is called");
+		System.out.println("Default Constructor");
 	}
 	
 	MethodOverloading(int x)
 	{
 		num = x;
-		System.out.println("Parameterized Constructor 1 is called");
+		System.out.println("Parameterized Constructor 1");
 	}
 	
 	MethodOverloading(int x, int y)
 	{
 		num = x;
-		System.out.println("Parameterized Constructor 2 is called");
+		System.out.println("Parameterized Constructor 2");
 	}
 	
 	int add(int x, int y)
