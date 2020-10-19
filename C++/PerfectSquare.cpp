@@ -1,7 +1,7 @@
 #include <bits/stdc++.h> 
 using namespace std; 
 
-bool check_PerfectSquare(int n ) { 
+bool check_PerfectSquare(long long int n ) { 
     float s=sqrt(n); 
     int a=s;
     if (a==s)
@@ -11,7 +11,7 @@ bool check_PerfectSquare(int n ) {
 } 
 
 int main() { 
-  int n ;
+  long long int n ;
   cout<<"Enter any number\n";
   cin>>n;
   if ( check_PerfectSquare(n)) 
