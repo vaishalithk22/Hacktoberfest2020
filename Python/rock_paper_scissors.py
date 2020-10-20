@@ -55,6 +55,9 @@ while player == False:
       You=1*0
       PC=1*0
       print("The score has been reset!")
+    elif player == "exit":
+      print("Okie Byee!!")
+      break
     else:
         print("That's not a valid play. Please select a valid option!")
     player = False
