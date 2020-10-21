@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class periodictable {
+public static void main(String[] args) {
+Scanner lee = new Scanner(System.in);
+Scanner lee1 = new Scanner(System.in);
+int i,n ;
+
+System.out.println (" ingrese Numero Atomico,Peso Atomico,nombre de elemento y simbolo ");
+System.out.println (" ingrese n cantidad de elementos que desee leer");
+n= lee.nextInt();
+String nom[] = new String[n];
+String simb[] = new String[n];
+float Natomico[] = new float[n];
+float PesoA[] = new float[n];
+float max=0,maxp=0;
+int npos=0,ppos=0;
+// se ingresan los datos
+for ( i = 0; i < n; i=i+1) {
+System.out.println(" entre No. Atomico");
+Natomico[i]= lee.nextFloat();
+System.out.println(" entre Peso Atomico ");
+PesoA[i]= lee.nextFloat();
+System.out.println(" Nombre Elemento ");
+nom[i]= lee1.nextLine();
+System.out.println(" simbolo ");
+simb[i]= lee1.nextLine(); }
+max= Natomico[0];
+maxp= PesoA[0];
+//encontrar mayor
+for ( i = 0; i < n; i=i+1) {
+if ( Natomico[i] > max ) {max= Natomico[i]; npos=i; }
+if ( PesoA[i] > maxp ) {maxp= PesoA[i]; ppos=i; }
+}
+//impresion de resultados
+System.out.println(" vector" );
+System.out.println ("=============  Elemento      simbolo     Numero Atomico      Peso Atomico =============");
+for (i =0 ; i <n ; i=i+1) {
+System.out.println ("vector("+i+")= " + "     "+ nom[i] + "         "+ simb[i] + "           "+Natomico[i] + "                "+PesoA[i] );
+}
+System.out.println ("=============                Conclusion de Analisis                       =============");
+System.out.println (" maximo numero atomico es = " + max  +" nombre = "  + nom[npos] +"  simbolo = " + simb[npos]);
+System.out.println (" maximo peso atomico es   = " + maxp +" nombre = " + nom[ppos]  +"  simbolo = " + simb[ppos]);
+} }
