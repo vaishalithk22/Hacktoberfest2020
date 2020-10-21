@@ -1,0 +1,41 @@
+import java.util.Scanner;
+import java.io.Console;
+public class arregloventa {
+	
+	public static void main(String[] args) {
+
+	int n,i,j;
+	double TotVentas=0;
+	System.out.println(" Manejo de vectores tipo double  ");
+	System.out.println(" ");
+	String nombre= "Manejo vectores usando el FOR con arreglos ";
+	
+	System.out.println("Ingrese tamaño de vector");
+	Scanner lee = new Scanner(System.in);
+	 Scanner lee1 = new Scanner(System.in);
+	n=lee.nextInt();
+	double [] Ventas = new double [n];
+	String [] Producto= new String [n];
+	System.out.println("" + nombre );
+
+	for(j=0; j< Ventas.length; j=j+1) {
+		 System.out.print("ingrese Producto(" +j +"):" );
+		
+		Producto[j]= lee1.nextLine(); 
+		
+	 System.out.print("ingrese la Ventas(" +j +"):" );
+	 Ventas[j]= lee.nextDouble(); }
+
+	System.out.println("\nImprime las Ventas " );
+	for(i=0; i< Ventas.length; i=i+1) {
+	 System.out.println(" + " + Producto[i]+" " +Ventas[i] );
+	 TotVentas= Ventas[i] + TotVentas; }
+	
+	System.out.println("\n El Total Ventas es= " + TotVentas );
+	System.out.println("\n El Promedio de Ventas es= " + TotVentas/Ventas.length );
+System.out.println("\n Longitud del vector: " + Ventas.length );
+
+	
+	}
+	
+}
