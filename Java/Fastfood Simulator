@@ -1,0 +1,170 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+public class promociones {
+
+	public static void main(String[] args) {
+Scanner lee = new Scanner(System.in);
+int dia,salir;
+double papas=1.8,soda=1.0,mcpoll=4.95,mcwrp=5.10,wrpdoub=5.0,chouse=6.00,
+	   mcchees=4.50,mcveggie=7.00, mcbacon=7.00,total,itbms;
+DecimalFormat df = new DecimalFormat("####0.00");
+
+System.out.println("Ejemplo promocion 50% de Lunes a Viernes");
+
+	
+
+
+do {
+System.out.println("Ingrese el dia de la semana");		
+dia= lee.nextInt();
+
+switch (dia) {
+        case 1:
+      
+       
+        
+        	   System.out.println("Has seleccionado Lunes");
+        	   System.out.println("Promocion lunes");
+        	   total=papas+soda+mcpoll;
+               itbms= total*0.07;
+        	   System.out.println("Papitas  "+df.format(papas));
+        	   System.out.println("Soda     "+df.format(soda));
+        	   System.out.println("Mcpollo  "+df.format(mcpoll));
+        	   System.out.println("================");
+        	   System.out.println("subTotal "+df.format(total));
+        	   System.out.println("================");
+         	   System.out.println("-DESCUENTO 50%");
+          	  total=total*0.5;
+         	   System.out.println("subTotal "+df.format(total));
+    
+        	   System.out.println("ITBMS    "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total    "+df.format(total));
+  
+            break;
+        case 2:
+        	
+        	
+        
+        	   System.out.println("Has seleccionado Martes");
+        	   System.out.println("Promocion Martes");
+        	   total=papas+soda+mcwrp;
+               itbms= total*0.07;
+        	   System.out.println("Papitas  "+df.format(papas));
+        	   System.out.println("Soda     "+df.format(soda));
+        	   System.out.println("Mcwrap   "+df.format(mcwrp));
+        	   System.out.println("================");
+        	   System.out.println("Total    "+df.format(total));
+        	   System.out.println("================");
+         	   System.out.println("-DESCUENTO 50%");
+          	  total=total*0.5;
+         	   System.out.println("Total    "+df.format(total));
+
+        	   System.out.println("ITBMS    "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total    "+df.format(total));
+            
+            
+            break;
+        case 3:
+        	   System.out.println("Has seleccionado Miercoles");
+        	   System.out.println("Promocion Miercoles");
+        	   total=papas+soda+wrpdoub;
+               itbms= total*0.07;
+        	   System.out.println("Papitas  "+df.format(papas));
+        	   System.out.println("Soda     "+df.format(soda));
+        	   System.out.println("Wrapx2   "+df.format(wrpdoub));
+        	   System.out.println("================");
+        	   System.out.println("Total    "+df.format(total));
+        	   System.out.println("================");
+         	   System.out.println("-DESCUENTO 50%");
+          	  total=total*0.5;
+         	   System.out.println("Total    "+df.format(total));
+
+        	   System.out.println("ITBMS    "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total    "+df.format(total));
+            break;
+        case 4:                        
+        	   System.out.println("Has seleccionado Jueves");  
+        	   System.out.println("Promocion Jueves");
+        	   total=papas+soda+chouse;
+               itbms= total*0.07;
+        	   System.out.println("Papitas     "+df.format(papas));
+        	   System.out.println("Soda        "+df.format(soda));
+        	   System.out.println("ClubHouse   "+df.format(chouse));
+        	   System.out.println("================");
+        	   System.out.println("Total       "+df.format(total));
+        	   System.out.println("================");
+         	   System.out.println("-DESCUENTO 50%");
+          	  total=total*0.5;
+         	   System.out.println("Total       "+df.format(total));
+      
+        	   System.out.println("ITBMS       "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total       "+df.format(total));
+       break;
+        case 5:
+        	   System.out.println("Has seleccionado Viernes");      
+        	   System.out.println("Promocion Viernes");
+        	   total=papas+soda+mcchees;
+               itbms= total*0.07;
+        	   System.out.println("Papitas  "+df.format(papas));
+        	   System.out.println("Soda     "+df.format(soda));
+        	   System.out.println("McCheese "+df.format(mcchees));
+        	   System.out.println("================");
+        	   System.out.println("Total    "+df.format(total));
+        	   System.out.println("================");
+         	   System.out.println("-DESCUENTO 50%");
+          	  total=total*0.5;
+         	   System.out.println("Total    "+df.format(total));
+     
+        	   System.out.println("ITBMS    "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total    "+df.format(total));
+        	break;
+        case 6:
+        	   System.out.println("Has seleccionado Sabado");
+        	   total=papas+soda+mcveggie;
+               itbms= total*0.07;
+        	   System.out.println("Papitas  "+df.format(papas));
+        	   System.out.println("Soda     "+df.format(soda));
+        	   System.out.println("McVeggie "+df.format(mcveggie));
+        	   System.out.println("================");
+        	   System.out.println("Total    "+df.format(total));
+        	   System.out.println("ITBMS    "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total    "+df.format(total));
+            break;
+            
+        case 7:
+        	   System.out.println("Has seleccionado Domingo");
+        	   total=papas+soda+mcbacon;
+               itbms= total*0.07;
+        	   System.out.println("Papitas  "+df.format(papas));
+        	   System.out.println("Soda     "+df.format(soda));
+        	   System.out.println("McBacon  "+df.format(mcbacon));
+        	   System.out.println("================");
+        	   System.out.println("Total    "+df.format(total));
+        	   System.out.println("ITBMS    "+df.format(itbms));
+         	   System.out.println("================");
+         	  total=total+itbms;
+         	   System.out.println("Total    "+df.format(total));
+            
+            	break;
+     
+        default:
+            System.out.println("Los días de la semana van del 1 al 7, intente de nuevo");
+	}
+System.out.println("Desea continuar?(1/0)");		
+salir= lee.nextInt();
+}
+while(salir==1);
+}
+}
