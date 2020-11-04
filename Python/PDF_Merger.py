@@ -1,13 +1,13 @@
 import PyPDF2
 import sys
 
-inputs = sys.argv[1:]
-
-def pdf_combiner(pdflist):
+input1 = input()
+input2 = input()
+def pdf_combiner(input1,input2):
 	merger = PyPDF2.PdfFileMerger()
-	
-	for pdf in pdflist:
-		merger.append(pdf)
+
+	merger.append(input1)
+	merger.append(input2)
 
 	merger.write('Combined.pdf')	
 
